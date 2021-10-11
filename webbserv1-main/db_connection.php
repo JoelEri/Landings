@@ -15,4 +15,12 @@ function CloseCon($conn)
  $conn -> close();
  }
 
+$query = mysqli_query($conn, "SELECT * FROM tbl_articles");
+while($row = mysqli_fetch_assoc($query))
+{
+$title = $row[´title´];
+$content = $row [´content´]
+}
+
+
 ?>
